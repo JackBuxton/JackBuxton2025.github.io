@@ -90,15 +90,19 @@
       color: #555;
     }
 
-    footer {
-      background-color: #002aff;
+    /* Confirmation Box Styling */
+    .confirmation {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4CAF50;
       color: white;
-      text-align: center;
-      padding: 1rem;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      margin-top: 40px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      font-size: 14px;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -119,7 +123,7 @@
     <h2>Donate $1 a Month</h2>
     <p>Help us continue spreading awareness and supporting those affected by bullying. With just <strong>$1 a month</strong>, you can make a difference.</p>
 
-    <form>
+    <form id="donationForm">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" placeholder="Your Name" required>
 
@@ -138,10 +142,36 @@
     <p class="note">This is a demo payment form. To accept real payments, connect with a service like <strong>Stripe</strong> or <strong>PayPal</strong>.</p>
   </section>
 
+  <!-- Confirmation Box -->
+  <div id="confirmationBox" class="confirmation"></div>
+
   <footer>
     &copy; 2025 Stand Strong. All rights reserved to Jack Buxton.
   </footer>
 
+  <script>
+    const form = document.getElementById("donationForm");
+    const confirmationBox = document.getElementById("confirmationBox");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // stop page reload
+
+      const name = document.getElementById("name").value;
+
+      // Show confirmation box
+      confirmationBox.textContent = `Thank you, ${name}! Your $1 monthly donation has been confirmed.`;
+      confirmationBox.style.display = "block";
+
+      // Hide after 6 seconds
+      setTimeout(() => {
+        confirmationBox.style.display = "none";
+      }, 6000);
+
+      form.reset();
+    });
+  </script>
+
 </body>
 </html>
+
 
