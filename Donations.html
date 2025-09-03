@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donations - Stand Strong</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;  
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #002aff;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #002aff;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #002aff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #002aff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #001bbf;
+    }
+
+    .note {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #002aff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Support Stand Strong</h1>
+  </header>
+
+  <nav>
+    <a href="Homepage.html">Homepage</a>
+    <a href="Anti-Bullying.html">Anti-Bullying</a>
+    <a href="Get-Help.html">Get Help</a>
+    <a href="Donations.html">Donations</a>
+  </nav>
+
+  <section class="content">
+    <h2>Donate $1 a Month</h2>
+    <p>Help us continue spreading awareness and supporting those affected by bullying. With just <strong>$1 a month</strong>, you can make a difference.</p>
+
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="card">Credit Card Number</label>
+      <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+
+      <label for="expiry">Expiry Date</label>
+      <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+      <label for="cvc">CVC</label>
+      <input type="text" id="cvc" name="cvc" placeholder="123" required>
+
+      <button type="submit">Donate $1 / Month</button>
+    </form>
+
+    <p class="note">This is a demo payment form. To accept real payments, connect with a service like <strong>Stripe</strong> or <strong>PayPal</strong>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Stand Strong. All rights reserved to Jack Buxton.
+  </footer>
+
+</body>
+</html>
 
