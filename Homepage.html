@@ -3,25 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homepage - Stand Strong</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Stand Strong</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #002aff;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #002aff;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background-color: #002aff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Stand Strong Against Bullying</h1>
+    <h1>Welcome to Stand Strong</h1>
   </header>
+
   <nav>
-    <a href="Homepage.html">Homepage</a>
-    <a href="Anti-Bullying.html">Anti-Bullying</a>
-    <a href="Get-Help.html">Get Help</a>
+    <a href="Donations.html">Homepage</a>
+    <a href="Donations.html">Anti-Bullying</a>
+    <a href="Donations.html">Get Help</a>
     <a href="Donations.html">Donations</a>
   </nav>
-  <div class="content">
-    <h2>Welcome</h2>
-    <p>This is the homepage of our Anti-Bullying website. Learn more, get help, and support the cause.</p>
-  </div>
+
+  <section class="hero">
+    <h1>Stand Strong Against Bullying</h1>
+  </section>
+
+  <section class="content">
+    <h2>About Me</h2>
+    <p>Hello! My name is Jack Buxton and I'm glad you're here. This website’s homepage was built with HTML and CSS with ChatGPT's help.</p>
+  </section>
+
   <footer>
-    <p>© 2025 Stand Strong</p>
+    &copy; 2025 Stand Strong. All rights reserved to Jack Buxton.
   </footer>
+
 </body>
 </html>
