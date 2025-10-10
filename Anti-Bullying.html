@@ -4,9 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Get Help - Stand Strong</title>
-  <link rel="stylesheet" href="style.css">
   <style>
-    /* Page-specific styling to match other pages */
+    body {
+      font-family: Arial, sans-serif; 
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #002aff;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #002aff;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .hero {
       background: url('https://via.placeholder.com/1200x400/ff0000/ffffff?text=Need+Help?') no-repeat center center/cover;
       height: 300px;
@@ -21,16 +51,12 @@
       font-size: 2.5rem;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 1rem;
-      border-radius: 8px;
     }
 
     .content {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .content ul {
@@ -52,46 +78,14 @@
       text-decoration: underline;
     }
 
-    form {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-top: 5px;
-      font-size: 1rem;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px;
+    footer {
       background-color: #002aff;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #001bbf;
-    }
-
-    #responseMessage {
-      margin-top: 15px;
       text-align: center;
-      font-weight: bold;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
@@ -105,7 +99,7 @@
     <a href="Homepage.html">Homepage</a>
     <a href="Anti-Bullying.html">Anti-Bullying</a>
     <a href="Get-Help.html">Get Help</a>
-    <a href="Donations.html">Donations</a>
+    <a href="Donations.html">Donation</a>
   </nav>
 
   <section class="hero">
@@ -121,7 +115,18 @@
       <li><a href="https://www.lifeline.org.au" target="_blank">Lifeline</a></li>
       <li><a href="https://bullyingnoway.gov.au" target="_blank">Bullying No Way!</a></li>
       <li><a href="https://headspace.org.au" target="_blank">Headspace</a></li>
+      <li>
+        <a href="mailto:S010356@victorycollege.com?subject=Support%20Request%20from%20Stand%20Strong&body=Hi%20Stand%20Strong%20Team,%0D%0A%0D%0AI%20need%20some%20support%20regarding%20bullying.%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]">
+          Email for Support
+        </a>
+      </li>
     </ul>
+  </section>
 
-    <h3>Contact Us Directly</h3>
-    <p>If you'd prefer to email us directly, click below to open Outlook and send an email to our support team.</p>
+  <footer>
+    &copy; 2025 Stand Strong. All rights reserved to Jack Buxton.
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
